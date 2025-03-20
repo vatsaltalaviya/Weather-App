@@ -52,7 +52,8 @@ const Weather = () => {
         
         }
         catch(error){
-            console.log(error)
+            setWeatherData(false);
+            console.error("Error while fetching weather data");
         }
     }
 
@@ -66,6 +67,7 @@ const Weather = () => {
             <input ref={inputRef} type="text" placeholder='Search'/>
             <img src={search_icon} alt="" onClick={()=>search(inputRef.current.value)}/>
         </div>
+        {WeatherData?<>
         <img src={WeatherData.icon} className='weather-img' alt="" />
         <p className='temp'>{WeatherData.temp} °C</p>
         <p className='location'>{WeatherData.city}</p>
@@ -85,6 +87,8 @@ const Weather = () => {
                 </div>
             </div>
         </div>
+        
+        </>:<></>}
     </div>
   )
 }
