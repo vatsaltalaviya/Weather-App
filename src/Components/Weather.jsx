@@ -41,7 +41,6 @@ const Weather = () => {
         
             const res = await fetch(url);
             const data = await res.json();
-            console.log(data);
             const icon = allIcons[data.weather[0].icon] || allIcons['01d'];
             setWeatherData({
                 temp: Math.floor(data.main.temp),
