@@ -15,17 +15,41 @@ Workspace
 (rerun without)
 Collecting workspace information
 
-Weather-App/ ├── public/ │ └── vite.svg ├── src/ │ ├── App.jsx │ ├── index.css │ ├── main.jsx │ ├── assets/ │ │ ├── clear.png │ │ ├── cloud.png │ │ ├── drizzle.png │ │ ├── humidity.png │ │ ├── rain.png │ │ ├── search.png │ │ ├── snow.png │ │ ├── wind.png │ └── Components/ │ ├── Weather.css │ └── Weather.jsx ├── .env ├── .gitignore ├── eslint.config.js ├── index.html ├── package.json ├── README.md └── vite.config.js
+Weather-App/
+├── public/ 
+│ └── vite.svg 
+├── src/ 
+│ ├── App.jsx 
+│ ├── index.css 
+│ ├── main.jsx 
+│ ├── assets/ 
+│ │ ├── clear.png
+│ │ ├── cloud.png 
+│ │ ├── drizzle.png 
+│ │ ├── humidity.png 
+│ │ ├── rain.png 
+│ │ ├── search.png 
+│ │ ├── snow.png 
+│ │ ├── wind.png 
+│ └── Components/ 
+│ ├── Weather.css 
+│ └── Weather.jsx 
+├── .env 
+├── .gitignore 
+├── eslint.config.js 
+├── index.html 
+├── package.json 
+├── README.md 
+└── vite.config.js
 
 ## Installation
 
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/weather-app.git
-   cd weather-appnpm installnpm install
-
-
+   cd weather-app
    npm install
+
 
    VITE_APP_KEY=your_api_key_here
 
